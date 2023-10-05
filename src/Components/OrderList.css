@@ -1,0 +1,11 @@
+
+  /* .list-container{
+    list-style-image: url("https://www.flaticon.com/free-animated-icon/list_8722697?term=ordered+list&page=1&position=1&origin=search&related_id=8722697");
+  } */
+  .animated-list {
+    list-style-image: url("../Images/pen.png");
+  }
+  .animated-list li{
+    padding-bottom: 15px;
+  }
+  

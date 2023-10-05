@@ -1,0 +1,22 @@
+
+.cart{
+  background-color: #25282C;
+}
+@media (min-width: 1024px) {
+  .parenttt{
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+  }
+  }
+@media (max-width: 480px) {
+.parenttt{
+  margin: auto;
+  place-items: center;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 20px;
+}
+}

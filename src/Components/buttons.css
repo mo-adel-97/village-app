@@ -1,0 +1,29 @@
+.buttonParent{
+    display: flex;
+    justify-content: center;
+    
+}
+.btn1 {
+    background-color: rgb(46,46,204,1);
+    margin: 15px;
+    height:60px;
+    width:10rem
+}
+.btn2 {
+    background-color: rgb(46,46,204,1);
+    margin: 15px;
+    height:60px;
+    width:10rem
+}
+@media (max-width: 480px) {
+   .buttonParent{
+    display: list-item;
+    text-align: center;
+   }
+   .btn1 {
+    width:80%
+}
+.btn2 {
+    width:80%
+}
+  }

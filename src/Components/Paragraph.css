@@ -1,0 +1,43 @@
+.Para {
+    color: hsl(0, 0%, 28%);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    /* letter-spacing: px; */
+    cursor: pointer;
+  }
+  
+  h4 span {
+    transition: 0.5s ease-out;
+  }
+  h4:hover span:nth-child(1) {
+    margin-right: 5px;
+  }
+  h4:hover span:nth-child(1):after {
+    content: "'";
+  }
+  h4:hover span:nth-child(2) {
+    margin-left: 30px;
+  }
+  h4:hover span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  }
+  @media (min-width: 1024px) {
+    .DIV {
+      width: 50%;
+    }
+  }
+  @media (max-width: 480px) {
+    .DIV {
+      width: 90%;
+    }
+    
+    .Para {
+      margin: auto;
+      width: 95%;
+      font-size: 15px;
+      color: hsl(0, 0%, 50%);
+      margin-top: 20px;
+    }
+  }

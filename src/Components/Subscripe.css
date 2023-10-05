@@ -1,0 +1,10 @@
+.Subscripe{
+    width :80%;
+    height: 250px;
+    background-color: #5D5DFF;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding-right: 2rem;
+}
