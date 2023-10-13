@@ -1,0 +1,131 @@
+.divlogin{
+    display:contents;
+    justify-content: center;
+    height: 100vh;
+}
+.imagelogin{
+    margin: auto;
+    text-align: center;
+}
+.formlogin {
+    width:70%;
+    max-width: 1000px;
+    margin:  auto;
+  }
+  
+  .h1login {
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(79, 98, 148);
+  }
+  
+  
+  .plogin {
+    color: #1976D2;
+  }
+  
+  .plogin::before {
+    display: inline;
+    content: "⚠ ";
+  }
+  
+  .inputlogin {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .inputlogin[type="text"],
+  .inputlogin[type="password"] {
+    
+    height: 60px;
+  }
+  
+  .labellogin {
+    line-height: 2;
+    text-align: left;
+    display: block;
+    margin-bottom: 13px;
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  
+  .buttonlogin[type="submit"],
+  .inputlogin[type="submit"] {
+    background: #1976D2;
+    color: white;
+    border: none;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    font-weight: 100;
+  }
+  
+  .buttonlogin[type="submit"]:hover,
+  .inputlogin[type="submit"]:hover {
+    background: #1976D2;
+  }
+  
+  .buttonlogin[type="submit"]:active,
+  .inputlogin[type="button"]:active,
+  .inputlogin[type="submit"]:active {
+    transition: 0.3s all;
+    transform: translateY(3px);
+    border: 1px solid transparent;
+    opacity: 0.8;
+  }
+  
+  .inputlogin:disabled {
+    opacity: 0.4;
+  }
+  
+  .inputlogin[type="button"]:hover {
+    transition: 0.3s all;
+  }
+  
+  .buttonlogin[type="submit"],
+  .inputlogin[type="button"],
+  .inputlogin[type="submit"] {
+    -webkit-appearance: none;
+  }
+  
+  /* .Login {
+    max-width: 600px;
+    margin: 0 auto;
+  } */
+  
+  .buttonlogin[type="button"] {
+    display: block;
+    appearance: none;
+    background: #333;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  hr {
+    margin-top: 30px;
+  }
+  
+  .buttonlogin {
+    display: block;
+    appearance: none;
+    margin-top: 40px;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  

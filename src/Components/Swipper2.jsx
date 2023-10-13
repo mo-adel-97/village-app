@@ -7,7 +7,7 @@ import img3 from "../Images/anshta3.jpg"
 import img4 from "../Images/anshta4.jpg"
 import img5 from "../Images/anshta5.jpg"
 
-import "./swipper.css"
+import "./swipper2.css"
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
@@ -25,7 +25,7 @@ const Swipper2 =()=>{
     className="mySwiper"
   >
     <SwiperSlide>
-        <img src={img1} alt="image..." />
+        <img src={img1} alt="image..."  />
     </SwiperSlide>
     <SwiperSlide>
     <img src={img2} alt="image..." />

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Activtes.css";
 import AnimatedList from "./OrderList";
+import AnimatedList2 from "./OrderList2";
 import Zoom from 'react-reveal/Zoom';
 import config from 'react-reveal/globals';
 import Swipper from "./Swipper";
@@ -26,9 +27,9 @@ const Activites = ()=>{
 
           <div className="child1" >
           <h2 style={{color:"white",textAlign:"center"}}>
-                الجمعية الخيرية داخل قرية كرم 
+                النشاطات والأحداث داخل قرية كرم
             </h2>
-            <AnimatedList/>
+            <AnimatedList2/>
           </div>
           <div className="child2">
             <Swipper2 />

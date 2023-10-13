@@ -51,10 +51,10 @@ import img5 from "../Images/5.jfif"
           <div className="keen-slider__slide number-slide1">
             <img src={img1} alt="no i,age" style={{width:"100%",height:"100%"}}/>
           </div>
-          <div className="keen-slider__slide number-slide2"><img src={img2} alt="no i,age" style={{width:"100%",height:"100%"}}/></div>
           <div className="keen-slider__slide number-slide3"><img src={img3} alt="no i,age" style={{width:"100%",height:"100%"}}/></div>
           <div className="keen-slider__slide number-slide4"><img src={img4} alt="no i,age" style={{width:"100%",height:"100%"}}/></div>
           <div className="keen-slider__slide number-slide5"><img src={img5} alt="no i,age" style={{width:"100%",height:"100%"}}/></div>
+          <div className="keen-slider__slide number-slide2">2</div>
         </div>
 
         <br/><br/>

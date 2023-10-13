@@ -7,11 +7,11 @@ const Buttons = () =>{
         <div className="buttonParent">
           <Flip duration="2000" top>
           <Button variant="contained" className="btn1" style={{margin:"15px"}}>
-            <p style={{fontSize:"30px"}}>الأخبار</p></Button>
+            <p style={{fontSize:"30px",paddingTop:"10px"}}>الأخبار</p></Button>
             </Flip>
             <Flip duration="2000" bottom>
           <Button variant="contained" className="btn2" style={{margin:"15px"}}>
-            <p style={{fontSize:"30px"}}>النشاطات</p></Button>
+            <p style={{fontSize:"30px",paddingTop:"10px"}}>النشاطات</p></Button>
             </Flip>
         </div>
     )

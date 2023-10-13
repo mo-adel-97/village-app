@@ -9,19 +9,24 @@ import CardContent from '@mui/joy/CardContent';
 import CardOverflow from '@mui/joy/CardOverflow';
 import CardActions from '@mui/joy/CardActions';
 import IconButton from '@mui/joy/IconButton';
-// import Typography from '@mui/joy/Typography';
-// import SvgIcon from '@mui/icons-material/SvgIcon';
-import Arr from './State';
 import "./cart.css";
 import avatar from "../Images/avatar1.enc"
-
-// import {AnimatedOnScroll} from "react-animated-css-onscroll";
-// import "animate.css/animate.min.css";
-
+import { useEffect,useState } from 'react';
 export default function BioCard() {
+  const [data,setData] = useState([]);
+  // const [loading,setLoading] = useState(true)
+
+  useEffect(() => {
+      fetch("http://localhost:3001/getmen")
+      .then(response => response.json())
+          // 4. Setting *dogImage* to the image url that we received from the response above
+      .then(data => {
+        setData(data);
+      })
+    },[])
   return (
     <div className='parenttt'>
-    {Arr.map((item) => (  
+    {data.map((item) => (  
   
         <Card className="cart" key={item.id}
         style={{border:"0 solid #d9e3ea"}}
@@ -33,7 +38,7 @@ export default function BioCard() {
         }}
       >
         <CardContent sx={{ alignItems: 'center', textAlign: 'center' }}>
-          <Avatar src={avatar} sx={{ '--Avatar-size': '4rem' }} />
+          <Avatar src={require(`../Images/${item.imageUrl}`)} sx={{ '--Avatar-size': '4rem' }} />
           <Chip
             size="sm"
             variant="soft"
@@ -48,12 +53,14 @@ export default function BioCard() {
               borderColor: '#1976D2',
             }}
           >
-            PRO
+            {item.pio}
           </Chip>
+          <div style={{height:"200px"}}>
           <h3 level="title-lg" style={{marginTop:"0px",color:"#d9e3ea"}}>{item.name}</h3>
           <p style={{marginTop:"0px",color:"#9BA9B4"}} level="body-sm" sx={{ maxWidth: '24ch' }}>
-           {item.paragraph}
+           {item.Description}
           </p>
+          </div>
           <Box
             sx={{
               display: 'flex',
